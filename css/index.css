@@ -158,6 +158,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .header-section {
+    height: 500px;
+  }
+}
 .header-section .name-title-heading {
   flex-direction: row;
   width: 700px;
@@ -167,11 +172,26 @@ body {
   font-size: 4.5rem;
   align-content: space-around;
 }
+@media (max-width: 500px) {
+  .header-section .name-title-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 125px;
+  }
+}
 .header-section .name-title-heading h1 {
   border: 3px solid white;
   flex-direction: row;
   justify-content: space-between;
   padding: 40px 0px;
+}
+@media (max-width: 500px) {
+  .header-section .name-title-heading h1 {
+    padding: 30px 0px;
+    font-size: 2.6rem;
+  }
 }
 .header-section .name-title-heading h2 {
   font-size: 1.8rem;
@@ -183,6 +203,15 @@ body {
   position: relative;
   left: 225px;
   bottom: 13.5%;
+}
+@media (max-width: 500px) {
+  .header-section .name-title-heading h2 {
+    font-size: 1.4rem;
+    padding: 5px 0px;
+    position: relative;
+    left: 70px;
+    bottom: 18.5px;
+  }
 }
 .header-section nav {
   display: flex;
@@ -197,27 +226,55 @@ body {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 500px) {
+  .header-section nav {
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    padding-bottom: 30px;
+  }
+}
 h2 {
   font-size: 4.5rem;
   font-weight: 500;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2.6rem;
+  }
+}
 h3 {
   font-size: 2.5rem;
   font-weight: 500;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 .content-parent-container {
   display: flex;
   flex-direction: row;
   padding: 100px;
   width: 100%;
-  height: 1300px;
+  height: 100%;
   font-size: 1.8rem;
   color: #4A6567;
+}
+@media (max-width: 500px) {
+  .content-parent-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
 }
 .content-parent-container h2 {
   text-decoration: underline;
 }
-.content-parent-container .left-side {
+.left-side {
   display: flex;
   width: 65%;
   height: 1500px;
@@ -226,55 +283,68 @@ h3 {
   padding-right: 70px;
   border-right: 3px solid #4A6567;
 }
-.content-parent-container .left-side .intro-container {
+@media (max-width: 500px) {
+  .left-side {
+    width: 100%;
+    height: 2000px;
+    padding-right: 0px;
+    border-right: none;
+  }
+}
+.left-side .intro-container {
   display: flex;
   width: 100%;
   height: 250px;
   flex-direction: column;
   justify-content: space-around;
 }
-.content-parent-container .left-side .experience-container {
+.left-side .experience-container {
   display: flex;
   width: 100%;
   height: 700px;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.content-parent-container .left-side .experience-container h2 {
+.left-side .experience-container h2 {
   text-decoration: underline;
 }
-.content-parent-container .left-side .experience-container .experience-content {
+.left-side .experience-container .experience-content {
   display: flex;
   width: 100%;
   height: 600px;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.content-parent-container .left-side .experience-container .experience-content .employers {
+.left-side .experience-container .experience-content .employers {
   display: flex;
   width: 100%;
   height: 150px;
   flex-direction: column;
   justify-content: space-between;
 }
-.content-parent-container .left-side .education {
+.left-side .education {
   display: flex;
   width: 100%;
-  height: 450px;
+  height: 550px;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.content-parent-container .left-side .education .school {
+.left-side .education .school {
   display: flex;
   width: 100%;
-  height: 200px;
+  height: 220px;
   flex-direction: column;
   justify-content: space-around;
 }
-.content-parent-container .left-side .education h4 {
+@media (max-width: 500px) {
+  .left-side .education h3 {
+    text-decoration: underline;
+  }
+}
+.left-side .education h4 {
   font-weight: 500;
 }
-.content-parent-container .right-side {
+.right-side {
   display: flex;
   width: 35%;
   height: 1500px;
@@ -285,34 +355,46 @@ h3 {
   padding-left: 70px;
   text-align: center;
 }
-.content-parent-container .right-side img {
+@media (max-width: 500px) {
+  .right-side {
+    width: 100%;
+    height: 3000px;
+    padding-left: 0px;
+  }
+}
+.right-side img {
   width: 50%;
   height: auto;
   border-radius: 100%;
   padding-top: 5px;
 }
-.content-parent-container .right-side .contact {
+@media (max-width: 500px) {
+  .right-side img {
+    padding: 40px 0px;
+  }
+}
+.right-side .contact {
   display: flex;
   width: 100%;
   height: 250px;
   flex-direction: column;
   justify-content: space-around;
 }
-.content-parent-container .right-side .skills {
+.right-side .skills {
   display: flex;
   width: 100%;
   height: 250px;
   flex-direction: column;
   justify-content: space-around;
 }
-.content-parent-container .right-side .interests {
+.right-side .interests {
   display: flex;
   width: 100%;
   height: 250px;
   flex-direction: column;
   justify-content: space-around;
 }
-.content-parent-container .right-side .interests ul {
+.right-side .interests ul {
   display: flex;
   width: 100%;
   height: 250px;
